@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+ <style>
+ 
+    main{
+        width: 600px;
+        height: 600px;
+        background-color: indigo;
+        border: none;
+        border-radius: 15px;
+
+    } body{text-align: center; display: flex;
+   align-items: center;
+justify-content: center; 
+background-image: url(' https://miro.medium.com/1*KG87Ag0nG3-gEoYx6ZXfPA.gif');
+
+    }
+    h1{color: white;}
+input{
+    width: 80%;
+    height: 60%;
+}.joinBtn {
+  width: 10em;
+  height: 5ex;
+  background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.joinBtn:active {
+  box-shadow: 2px 2px 5px #fc894d;
+}
+select {
+  background: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #5A4FCF 50%),
+    linear-gradient(135deg, #5A4FCF 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+
+/* Hover effekti */
+select:hover {
+  background-color: #f5f3ff;
+  box-shadow: 0 6px 20px rgba(90, 79, 207, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Focus holati */
+select:focus {
+  border: 2px solid #5A4FCF;
+  box-shadow: 0 0 10px rgba(90, 79, 207, 0.5);
+}
+
+/* Option style */
+select option {
+  background: white;
+  color: #333;
+  padding: 10px;
+}
+  input{
+    border: none;
+    border-radius: 15px;
+background-color: #5A4FCF;
+color: white;
+  } input::placeholder{
+    color: white;
+  }input:hover{
+    background:linear-gradient(violet,blue,white,pink);
+    border: 5px solid aqua;
+    
+  } button{width: 200px;height: 40px; border: none;
+border-radius: 10px;    }
+button {
+  background: linear-gradient(135deg, #1C1C1E, #3A3A3C);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effekti */
+button:hover {
+  background: linear-gradient(135deg, #2C2C2E, #4A4A4C);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+
+  </style>
+
+<body>
+   <main>
+    <h1>Text-to-Voice</h1>
+
+     <input type="text" placeholder="whirite and listen">  <br> <br>
+    <select id="langSelect">
+  <option value="en-US">English (US)</option>
+  <option value="en-GB">English (UK)</option>
+  <option value="en-AU">English (Australia)</option>
+  <option value="en-CA">English (Canada)</option>
+  <option value="uz-UZ">Uzbek</option>
+  <option value="ru-RU">Russian</option>
+  <option value="tr-TR">Turkish</option>
+  <option value="fr-FR">French</option>
+  <option value="fr-CA">French (Canada)</option>
+  <option value="de-DE">German</option>
+  <option value="es-ES">Spanish (Spain)</option>
+  <option value="es-MX">Spanish (Mexico)</option>
+  <option value="it-IT">Italian</option>
+  <option value="pt-PT">Portuguese (Portugal)</option>
+  <option value="pt-BR">Portuguese (Brazil)</option>
+  <option value="ar-SA">Arabic (Saudi Arabia)</option>
+  <option value="ar-EG">Arabic (Egypt)</option>
+  <option value="fa-IR">Persian</option>
+  <option value="hi-IN">Hindi</option>
+  <option value="bn-BD">Bengali</option>
+  <option value="ja-JP">Japanese</option>
+  <option value="ko-KR">Korean</option>
+  <option value="zh-CN">Chinese (Simplified)</option>
+  <option value="zh-TW">Chinese (Traditional)</option>
+  <option value="vi-VN">Vietnamese</option>
+  <option value="th-TH">Thai</option>
+  <option value="id-ID">Indonesian</option>
+  <option value="ms-MY">Malay</option>
+  <option value="pl-PL">Polish</option>
+  <option value="uk-UA">Ukrainian</option>
+  <option value="ro-RO">Romanian</option>
+  <option value="cs-CZ">Czech</option>
+  <option value="sk-SK">Slovak</option>
+  <option value="sv-SE">Swedish</option>
+  <option value="no-NO">Norwegian</option>
+  <option value="fi-FI">Finnish</option>
+  <option value="da-DK">Danish</option>
+  <option value="el-GR">Greek</option>
+  <option value="he-IL">Hebrew</option>
+  <option value="hu-HU">Hungarian</option>
+</select> <br> <br>
+ <button>speeach</button>
+   </main>
+    <script src="script.js"></script>
+</body>
+</html>
